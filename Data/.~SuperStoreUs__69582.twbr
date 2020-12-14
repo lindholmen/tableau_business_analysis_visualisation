@@ -19,6 +19,164 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
+    <datasource caption='P1-OfficeSupplies-MAC' inline='true' name='federated.07cgqzr0eytfej15aazj10pqlqlm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='P1-OfficeSupplies-MAC' name='textscan.0qqpypz0n62idc1c7n4yt0yi49kj'>
+            <connection class='textscan' directory='/Users/yemao/Documents/Project workspaces/Tableau Essentials/Data' filename='P1-OfficeSupplies-MAC.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0qqpypz0n62idc1c7n4yt0yi49kj' name='P1-OfficeSupplies-MAC.csv' table='[P1-OfficeSupplies-MAC#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+            <column datatype='date' name='OrderDate' ordinal='0' />
+            <column datatype='string' name='Region' ordinal='1' />
+            <column datatype='string' name='Rep' ordinal='2' />
+            <column datatype='string' name='Item' ordinal='3' />
+            <column datatype='integer' name='Units' ordinal='4' />
+            <column datatype='real' name='Unit Price' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0qqpypz0n62idc1c7n4yt0yi49kj' name='P1-OfficeSupplies-MAC.csv' table='[P1-OfficeSupplies-MAC#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+            <column datatype='date' name='OrderDate' ordinal='0' />
+            <column datatype='string' name='Region' ordinal='1' />
+            <column datatype='string' name='Rep' ordinal='2' />
+            <column datatype='string' name='Item' ordinal='3' />
+            <column datatype='integer' name='Units' ordinal='4' />
+            <column datatype='real' name='Unit Price' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[P1-OfficeSupplies-MAC.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¤&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en&quot;</attribute>
+              <attribute datatype='string' name='record-delimiter'>&quot;\\r&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OrderDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[OrderDate]</local-name>
+            <parent-name>[P1-OfficeSupplies-MAC.csv]</parent-name>
+            <remote-alias>OrderDate</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-OfficeSupplies-MAC.csv_0C4298F4BCD8431CA3E01E5B1096D512]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[P1-OfficeSupplies-MAC.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-OfficeSupplies-MAC.csv_0C4298F4BCD8431CA3E01E5B1096D512]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rep</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Rep]</local-name>
+            <parent-name>[P1-OfficeSupplies-MAC.csv]</parent-name>
+            <remote-alias>Rep</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-OfficeSupplies-MAC.csv_0C4298F4BCD8431CA3E01E5B1096D512]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Item]</local-name>
+            <parent-name>[P1-OfficeSupplies-MAC.csv]</parent-name>
+            <remote-alias>Item</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-OfficeSupplies-MAC.csv_0C4298F4BCD8431CA3E01E5B1096D512]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Units</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Units]</local-name>
+            <parent-name>[P1-OfficeSupplies-MAC.csv]</parent-name>
+            <remote-alias>Units</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-OfficeSupplies-MAC.csv_0C4298F4BCD8431CA3E01E5B1096D512]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unit Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Unit Price]</local-name>
+            <parent-name>[P1-OfficeSupplies-MAC.csv]</parent-name>
+            <remote-alias>Unit Price</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-OfficeSupplies-MAC.csv_0C4298F4BCD8431CA3E01E5B1096D512]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total_sale' datatype='real' name='[Calculation_46091563688443904]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Unit Price]*[Units]' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='P1-OfficeSupplies-MAC.csv' datatype='table' name='[__tableau_internal_object_id__].[P1-OfficeSupplies-MAC.csv_0C4298F4BCD8431CA3E01E5B1096D512]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='P1-OfficeSupplies-MAC.csv' id='P1-OfficeSupplies-MAC.csv_0C4298F4BCD8431CA3E01E5B1096D512'>
+            <properties context=''>
+              <relation connection='textscan.0qqpypz0n62idc1c7n4yt0yi49kj' name='P1-OfficeSupplies-MAC.csv' table='[P1-OfficeSupplies-MAC#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+                  <column datatype='date' name='OrderDate' ordinal='0' />
+                  <column datatype='string' name='Region' ordinal='1' />
+                  <column datatype='string' name='Rep' ordinal='2' />
+                  <column datatype='string' name='Item' ordinal='3' />
+                  <column datatype='integer' name='Units' ordinal='4' />
+                  <column datatype='real' name='Unit Price' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
     <datasource caption='P1-SuperStoreUS-2015' inline='true' name='federated.0fh1px618pelgj1gnocno1mvb8r9' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -539,164 +697,6 @@
                   <column datatype='integer' name='Quantity ordered new' ordinal='22' />
                   <column datatype='real' name='Sales' ordinal='23' />
                   <column datatype='integer' name='Order ID' ordinal='24' />
-                </columns>
-              </relation>
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
-    <datasource caption='P1-OfficeSupplies-MAC' inline='true' name='federated.07cgqzr0eytfej15aazj10pqlqlm' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='P1-OfficeSupplies-MAC' name='textscan.0qqpypz0n62idc1c7n4yt0yi49kj'>
-            <connection class='textscan' directory='/Users/yemao/Documents/Project workspaces/Tableau Essentials/Data' filename='P1-OfficeSupplies-MAC.csv' password='' server='' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0qqpypz0n62idc1c7n4yt0yi49kj' name='P1-OfficeSupplies-MAC.csv' table='[P1-OfficeSupplies-MAC#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en' separator=','>
-            <column datatype='date' name='OrderDate' ordinal='0' />
-            <column datatype='string' name='Region' ordinal='1' />
-            <column datatype='string' name='Rep' ordinal='2' />
-            <column datatype='string' name='Item' ordinal='3' />
-            <column datatype='integer' name='Units' ordinal='4' />
-            <column datatype='real' name='Unit Price' ordinal='5' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0qqpypz0n62idc1c7n4yt0yi49kj' name='P1-OfficeSupplies-MAC.csv' table='[P1-OfficeSupplies-MAC#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en' separator=','>
-            <column datatype='date' name='OrderDate' ordinal='0' />
-            <column datatype='string' name='Region' ordinal='1' />
-            <column datatype='string' name='Rep' ordinal='2' />
-            <column datatype='string' name='Item' ordinal='3' />
-            <column datatype='integer' name='Units' ordinal='4' />
-            <column datatype='real' name='Unit Price' ordinal='5' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[P1-OfficeSupplies-MAC.csv]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
-              <attribute datatype='string' name='currency'>&quot;¤&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;en&quot;</attribute>
-              <attribute datatype='string' name='record-delimiter'>&quot;\\r&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>OrderDate</remote-name>
-            <remote-type>133</remote-type>
-            <local-name>[OrderDate]</local-name>
-            <parent-name>[P1-OfficeSupplies-MAC.csv]</parent-name>
-            <remote-alias>OrderDate</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>date</local-type>
-            <aggregation>Year</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-OfficeSupplies-MAC.csv_0C4298F4BCD8431CA3E01E5B1096D512]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Region</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Region]</local-name>
-            <parent-name>[P1-OfficeSupplies-MAC.csv]</parent-name>
-            <remote-alias>Region</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-OfficeSupplies-MAC.csv_0C4298F4BCD8431CA3E01E5B1096D512]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Rep</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Rep]</local-name>
-            <parent-name>[P1-OfficeSupplies-MAC.csv]</parent-name>
-            <remote-alias>Rep</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-OfficeSupplies-MAC.csv_0C4298F4BCD8431CA3E01E5B1096D512]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Item</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Item]</local-name>
-            <parent-name>[P1-OfficeSupplies-MAC.csv]</parent-name>
-            <remote-alias>Item</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RGB' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-OfficeSupplies-MAC.csv_0C4298F4BCD8431CA3E01E5B1096D512]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Units</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Units]</local-name>
-            <parent-name>[P1-OfficeSupplies-MAC.csv]</parent-name>
-            <remote-alias>Units</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-OfficeSupplies-MAC.csv_0C4298F4BCD8431CA3E01E5B1096D512]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Unit Price</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Unit Price]</local-name>
-            <parent-name>[P1-OfficeSupplies-MAC.csv]</parent-name>
-            <remote-alias>Unit Price</remote-alias>
-            <ordinal>5</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P1-OfficeSupplies-MAC.csv_0C4298F4BCD8431CA3E01E5B1096D512]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='Total_sale' datatype='real' name='[Calculation_46091563688443904]' role='measure' type='quantitative'>
-        <calculation class='tableau' formula='[Unit Price]*[Units]' />
-      </column>
-      <_.fcp.ObjectModelTableType.true...column caption='P1-OfficeSupplies-MAC.csv' datatype='table' name='[__tableau_internal_object_id__].[P1-OfficeSupplies-MAC.csv_0C4298F4BCD8431CA3E01E5B1096D512]' role='measure' type='quantitative' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <date-options start-of-week='monday' />
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='P1-OfficeSupplies-MAC.csv' id='P1-OfficeSupplies-MAC.csv_0C4298F4BCD8431CA3E01E5B1096D512'>
-            <properties context=''>
-              <relation connection='textscan.0qqpypz0n62idc1c7n4yt0yi49kj' name='P1-OfficeSupplies-MAC.csv' table='[P1-OfficeSupplies-MAC#csv]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='en' separator=','>
-                  <column datatype='date' name='OrderDate' ordinal='0' />
-                  <column datatype='string' name='Region' ordinal='1' />
-                  <column datatype='string' name='Rep' ordinal='2' />
-                  <column datatype='string' name='Item' ordinal='3' />
-                  <column datatype='integer' name='Units' ordinal='4' />
-                  <column datatype='real' name='Unit Price' ordinal='5' />
                 </columns>
               </relation>
             </properties>
@@ -1355,16 +1355,6 @@
   <mapsources>
     <mapsource name='Tableau' />
   </mapsources>
-  <actions>
-    <action caption='Highlight 1 (generated)' name='[Action1]'>
-      <activation auto-clear='true' type='on-select' />
-      <source type='sheet' worksheet='Sheet 7' />
-      <command command='tsc:brush'>
-        <param name='field-captions' value='JOB_TITLE_SUBGROUP' />
-        <param name='target' value='Sheet 7' />
-      </command>
-    </action>
-  </actions>
   <worksheets>
     <worksheet name='Create groups as filters'>
       <table>
@@ -1460,7 +1450,7 @@
       </table>
       <simple-id uuid='{A0AE8A92-DF5F-46B9-8F17-6DB64F3C005C}' />
     </worksheet>
-    <worksheet name='Highest sale in each region'>
+    <worksheet name='Sheet 6'>
       <table>
         <view>
           <datasources>
@@ -1490,6 +1480,9 @@
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07cgqzr0eytfej15aazj10pqlqlm].[none:Region:nk]' />
+            </encodings>
           </pane>
         </panes>
         <rows>[federated.07cgqzr0eytfej15aazj10pqlqlm].[sum:Calculation_46091563688443904:qk]</rows>
@@ -1501,47 +1494,51 @@
       <table>
         <view>
           <datasources>
-            <datasource caption='Sheet1 (salary_data)' name='federated.1l5qcua1stnyf913tehn70xvvabm' />
+            <datasource caption='P1-SuperStoreUS-2015' name='federated.0fh1px618pelgj1gnocno1mvb8r9' />
           </datasources>
-          <datasource-dependencies datasource='federated.1l5qcua1stnyf913tehn70xvvabm'>
-            <column datatype='date' name='[CASE_RECEIVED_DATE]' role='dimension' type='ordinal' />
-            <column datatype='string' name='[JOB_TITLE_SUBGROUP]' role='dimension' type='nominal' />
-            <column datatype='real' name='[PAID_WAGE_PER_YEAR]' role='measure' type='quantitative' />
-            <column-instance column='[PAID_WAGE_PER_YEAR]' derivation='Median' name='[med:PAID_WAGE_PER_YEAR:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[CASE_RECEIVED_DATE]' derivation='None' name='[none:CASE_RECEIVED_DATE:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[JOB_TITLE_SUBGROUP]' derivation='None' name='[none:JOB_TITLE_SUBGROUP:nk]' pivot='key' type='nominal' />
-            <column-instance column='[CASE_RECEIVED_DATE]' derivation='Year' name='[yr:CASE_RECEIVED_DATE:ok]' pivot='key' type='ordinal' />
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0fh1px618pelgj1gnocno1mvb8r9'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State or Province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State or Province]' derivation='None' name='[none:State or Province:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
-          <filter class='quantitative' column='[federated.1l5qcua1stnyf913tehn70xvvabm].[none:CASE_RECEIVED_DATE:qk]' included-values='in-range'>
-            <min>#2009-01-01#</min>
-            <max>#2015-06-29#</max>
-          </filter>
-          <slices>
-            <column>[federated.1l5qcua1stnyf913tehn70xvvabm].[none:CASE_RECEIVED_DATE:qk]</column>
-          </slices>
           <aggregation value='true' />
         </view>
-        <style />
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
         <panes>
           <pane selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
-            <mark class='Shape' />
+            <mark class='Automatic' />
             <encodings>
-              <color column='[federated.1l5qcua1stnyf913tehn70xvvabm].[none:JOB_TITLE_SUBGROUP:nk]' />
+              <color column='[federated.0fh1px618pelgj1gnocno1mvb8r9].[sum:Profit:qk]' />
+              <text column='[federated.0fh1px618pelgj1gnocno1mvb8r9].[sum:Profit:qk]' />
+              <lod column='[federated.0fh1px618pelgj1gnocno1mvb8r9].[none:Country:nk]' />
+              <lod column='[federated.0fh1px618pelgj1gnocno1mvb8r9].[none:State or Province:nk]' />
+              <geometry column='[federated.0fh1px618pelgj1gnocno1mvb8r9].[Geometry (generated)]' />
             </encodings>
             <style>
               <style-rule element='mark'>
-                <format attr='size' value='0.60000002384185791' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
               </style-rule>
             </style>
           </pane>
         </panes>
-        <rows>[federated.1l5qcua1stnyf913tehn70xvvabm].[med:PAID_WAGE_PER_YEAR:qk]</rows>
-        <cols>[federated.1l5qcua1stnyf913tehn70xvvabm].[yr:CASE_RECEIVED_DATE:ok]</cols>
+        <rows>[federated.0fh1px618pelgj1gnocno1mvb8r9].[Latitude (generated)]</rows>
+        <cols>[federated.0fh1px618pelgj1gnocno1mvb8r9].[Longitude (generated)]</cols>
       </table>
-      <simple-id uuid='{A7D8E329-6F62-4A11-B296-3F375E0D0F62}' />
+      <simple-id uuid='{9D2580F2-004B-4E56-968A-BC8741A76A23}' />
     </worksheet>
     <worksheet name='US profit summary per state'>
       <table>
@@ -1692,122 +1689,6 @@
         <cols>[federated.1l5qcua1stnyf913tehn70xvvabm].[none:JOB_TITLE_SUBGROUP:nk]</cols>
       </table>
       <simple-id uuid='{B7DAE1D5-B01F-45AA-A45A-2494D817DA49}' />
-    </worksheet>
-    <worksheet name='median wage per job subgroup per visa class'>
-      <layout-options>
-        <title>
-          <formatted-text>
-            <run>Median paid wage for each job title under each visa class</run>
-          </formatted-text>
-        </title>
-        <caption>
-          <formatted-text>
-            <run>Median of PAID_WAGE_PER_YEAR for each JOB_TITLE_SUBGROUP broken down by VISA_CLASS. These data are from OFLC office</run>
-          </formatted-text>
-        </caption>
-      </layout-options>
-      <table>
-        <view>
-          <datasources>
-            <datasource caption='Sheet1 (salary_data)' name='federated.1l5qcua1stnyf913tehn70xvvabm' />
-          </datasources>
-          <datasource-dependencies datasource='federated.1l5qcua1stnyf913tehn70xvvabm'>
-            <column datatype='string' name='[JOB_TITLE_SUBGROUP]' role='dimension' type='nominal' />
-            <column datatype='real' name='[PAID_WAGE_PER_YEAR]' role='measure' type='quantitative' />
-            <_.fcp.ObjectModelTableType.false...column caption='Sheet1' datatype='integer' name='[__tableau_internal_object_id__].[Sheet1_D86B912848094E6F991B742A1339EF55]' role='measure' type='quantitative' />
-            <column datatype='string' name='[VISA_CLASS]' role='dimension' type='nominal' />
-            <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_D86B912848094E6F991B742A1339EF55]' role='measure' type='quantitative' />
-            <column-instance column='[__tableau_internal_object_id__].[Sheet1_D86B912848094E6F991B742A1339EF55]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_D86B912848094E6F991B742A1339EF55:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[PAID_WAGE_PER_YEAR]' derivation='Median' name='[med:PAID_WAGE_PER_YEAR:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[JOB_TITLE_SUBGROUP]' derivation='None' name='[none:JOB_TITLE_SUBGROUP:nk]' pivot='key' type='nominal' />
-            <column-instance column='[VISA_CLASS]' derivation='None' name='[none:VISA_CLASS:nk]' pivot='key' type='nominal' />
-            <column-instance column='[PAID_WAGE_PER_YEAR]' derivation='Stdev' name='[std:PAID_WAGE_PER_YEAR:qk]' pivot='key' type='quantitative' />
-          </datasource-dependencies>
-          <shelf-sorts>
-            <shelf-sort-v2 dimension-to-sort='[federated.1l5qcua1stnyf913tehn70xvvabm].[none:JOB_TITLE_SUBGROUP:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1l5qcua1stnyf913tehn70xvvabm].[med:PAID_WAGE_PER_YEAR:qk]' shelf='columns' />
-          </shelf-sorts>
-          <aggregation value='true' />
-        </view>
-        <style>
-          <style-rule element='axis'>
-            <format attr='width' field='[federated.1l5qcua1stnyf913tehn70xvvabm].[med:PAID_WAGE_PER_YEAR:qk]' value='66' />
-            <format attr='title' class='0' field='[federated.1l5qcua1stnyf913tehn70xvvabm].[__tableau_internal_object_id__].[cnt:Sheet1_D86B912848094E6F991B742A1339EF55:qk]' scope='rows' value='Number of records' />
-          </style-rule>
-          <style-rule element='cell'>
-            <format attr='width' field='[federated.1l5qcua1stnyf913tehn70xvvabm].[none:JOB_TITLE_SUBGROUP:nk]' value='20' />
-          </style-rule>
-          <style-rule element='label'>
-            <format attr='text-orientation' field='[federated.1l5qcua1stnyf913tehn70xvvabm].[none:JOB_TITLE_SUBGROUP:nk]' value='-90' />
-            <format attr='font-size' field='[federated.1l5qcua1stnyf913tehn70xvvabm].[none:JOB_TITLE_SUBGROUP:nk]' value='10' />
-            <format attr='color' field='[federated.1l5qcua1stnyf913tehn70xvvabm].[none:JOB_TITLE_SUBGROUP:nk]' value='#666666' />
-          </style-rule>
-        </style>
-        <panes>
-          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Automatic' />
-            <encodings>
-              <lod column='[federated.1l5qcua1stnyf913tehn70xvvabm].[__tableau_internal_object_id__].[cnt:Sheet1_D86B912848094E6F991B742A1339EF55:qk]' />
-              <lod column='[federated.1l5qcua1stnyf913tehn70xvvabm].[std:PAID_WAGE_PER_YEAR:qk]' />
-            </encodings>
-            <style>
-              <style-rule element='datalabel'>
-                <format attr='color-mode' value='auto' />
-                <format attr='font-size' value='10' />
-              </style-rule>
-              <style-rule element='mark'>
-                <format attr='mark-labels-cull' value='true' />
-                <format attr='mark-labels-show' value='true' />
-              </style-rule>
-            </style>
-          </pane>
-          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l5qcua1stnyf913tehn70xvvabm].[med:PAID_WAGE_PER_YEAR:qk]'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Automatic' />
-            <encodings>
-              <lod column='[federated.1l5qcua1stnyf913tehn70xvvabm].[__tableau_internal_object_id__].[cnt:Sheet1_D86B912848094E6F991B742A1339EF55:qk]' />
-              <lod column='[federated.1l5qcua1stnyf913tehn70xvvabm].[std:PAID_WAGE_PER_YEAR:qk]' />
-            </encodings>
-            <style>
-              <style-rule element='datalabel'>
-                <format attr='color-mode' value='auto' />
-                <format attr='font-size' value='10' />
-              </style-rule>
-              <style-rule element='mark'>
-                <format attr='mark-labels-cull' value='true' />
-                <format attr='mark-labels-show' value='true' />
-              </style-rule>
-            </style>
-          </pane>
-          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l5qcua1stnyf913tehn70xvvabm].[__tableau_internal_object_id__].[cnt:Sheet1_D86B912848094E6F991B742A1339EF55:qk]'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Automatic' />
-            <encodings>
-              <lod column='[federated.1l5qcua1stnyf913tehn70xvvabm].[__tableau_internal_object_id__].[cnt:Sheet1_D86B912848094E6F991B742A1339EF55:qk]' />
-              <lod column='[federated.1l5qcua1stnyf913tehn70xvvabm].[std:PAID_WAGE_PER_YEAR:qk]' />
-            </encodings>
-            <style>
-              <style-rule element='datalabel'>
-                <format attr='color-mode' value='auto' />
-                <format attr='font-size' value='10' />
-              </style-rule>
-              <style-rule element='mark'>
-                <format attr='mark-labels-cull' value='true' />
-                <format attr='mark-labels-show' value='true' />
-              </style-rule>
-            </style>
-          </pane>
-        </panes>
-        <rows>([federated.1l5qcua1stnyf913tehn70xvvabm].[med:PAID_WAGE_PER_YEAR:qk] + [federated.1l5qcua1stnyf913tehn70xvvabm].[__tableau_internal_object_id__].[cnt:Sheet1_D86B912848094E6F991B742A1339EF55:qk])</rows>
-        <cols>([federated.1l5qcua1stnyf913tehn70xvvabm].[none:VISA_CLASS:nk] / [federated.1l5qcua1stnyf913tehn70xvvabm].[none:JOB_TITLE_SUBGROUP:nk])</cols>
-      </table>
-      <simple-id uuid='{FAA65CA2-8B6E-4E6B-9247-F37A6C1ACC02}' />
     </worksheet>
     <worksheet name='median wage per subgroup per class using marks card'>
       <table>
@@ -2740,29 +2621,6 @@
       </cards>
       <simple-id uuid='{D8F4267B-56C8-4DC1-919C-1B485A22B782}' />
     </window>
-    <window class='worksheet' name='median wage per job subgroup per visa class'>
-      <cards>
-        <edge name='left'>
-          <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='31'>
-            <card type='title' />
-          </strip>
-        </edge>
-      </cards>
-      <simple-id uuid='{A3C02152-7F15-4685-8CED-E07EBA2F80A0}' />
-    </window>
     <window class='worksheet' name='checking for outliers'>
       <cards>
         <edge name='left'>
@@ -2851,30 +2709,7 @@
       </cards>
       <simple-id uuid='{55B1FFA7-4BA2-449C-AFBC-E82E06722ACE}' />
     </window>
-    <window class='worksheet' name='Highest sale in each region'>
-      <cards>
-        <edge name='left'>
-          <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='31'>
-            <card type='title' />
-          </strip>
-        </edge>
-      </cards>
-      <simple-id uuid='{3242A02D-A2AF-46F6-80A1-1F070E5390DD}' />
-    </window>
-    <window class='worksheet' maximized='true' name='Sheet 7'>
+    <window class='worksheet' maximized='true' name='Sheet 6'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2896,11 +2731,39 @@
         </edge>
         <edge name='right'>
           <strip size='160'>
-            <card pane-specification-id='0' param='[federated.1l5qcua1stnyf913tehn70xvvabm].[none:JOB_TITLE_SUBGROUP:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.07cgqzr0eytfej15aazj10pqlqlm].[none:Region:nk]' type='color' />
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{E2606DDA-D7AC-412A-9D76-58D48B198485}' />
+      <simple-id uuid='{3242A02D-A2AF-46F6-80A1-1F070E5390DD}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0fh1px618pelgj1gnocno1mvb8r9].[sum:Profit:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D5D895A8-C6BA-4258-871A-6651B9F0DFC0}' />
     </window>
   </windows>
 </workbook>
